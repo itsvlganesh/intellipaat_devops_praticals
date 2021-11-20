@@ -1,0 +1,346 @@
+Slave1
+Last login: Thu Nov 18 05:38:01 2021 from 37.34.240.210
+ubuntu@ip-172-31-32-85:~$ history
+    1  hostname -I
+    2  sudo su
+    3  exit
+    4  cd .ssh/
+    5  ls
+    6  sudo vi authorized_keys
+    7  ping master
+    8  pint slave2
+    9  ping slave2
+   10  sudo vi authorized_keys
+   11  sudo su
+   12  pwd
+   13  ls
+   14  su - jenkins
+   15  history
+ubuntu@ip-172-31-32-85:~$ sudo su
+root@ip-172-31-32-85:/home/ubuntu# history
+    1  cd ~
+    2  cat .ssh/authorized_keys
+    3  vi .ssh/authorized_keys
+    4  su - jenkins
+    5  vi .ssh/authorized_keys
+    6  sudo apt install software-properties-common apt-transport-https -y
+    7  sudo add-apt-repository ppa:openjdk-r/ppa -y
+    8  sudo apt install openjdk-8-jdk -y
+    9  java -version
+   10  useradd -m -s /bin/bash jenkins
+   11  passwd Jenkins
+   12  passwd jenkins
+   13  sudo scp /etc/hosts ubuntu@slave1:/etc/
+   14  cat .ssh/authorized_keys
+   15  sudo su
+   16  vi .ssh/authorized_keys
+   17  sudo su
+   18  cd ~
+   19  vi /etc/sudoers
+   20  java -version
+   21  mkdir /var/lib/jenkins/.ssh
+   22  cd ~
+   23  pwd
+   24  ls
+   25  cd .ssh/
+   26  pwd
+   27  su -jenkins
+   28  su - jenkins
+   29  cd ~
+   30  cd .ssh/
+   31  vi authorized_keys
+   32  hostname -I
+   33  ls /home/jenkins/
+   34  su - jenkins
+   35  clear
+   36  vi /etc/sudoers
+   37  cd ~
+   38  cat .ssh/authorized_keys
+   39  vi .ssh/authorized_keys
+   40  su - ubuntu
+   41  cd ~
+   42  apt update
+   43  apt install nagios-nrpe-server nagios-plugins
+   44  vi /etc/nagios/nrpe.cfg
+   45  systemctl restart nagios-nrpe-server
+   46  hostname -I
+   47  hostory
+   48  history
+   49  ls
+   50  su - ubuntu
+   51  cd ~
+   52  apt-get update
+   53  wget https://apt.puppetlabs.com/puppet-release-bionic.deb
+   54  dpkg -i puppet-release-bionic.deb
+   55  apt-get install puppet
+   56  systemctl start puppet
+   57  systemctl enable puppet
+   58  mkdir -p /etc/puppet/code/environments/production/manifests
+   59  systemctl status puppet
+   60  cat /etc/hosts
+   61  vi /etc/hosts
+   62  systemctl restart puppet
+   63  cat /etc/hosts
+   64  puppet agent --test
+   65  sudo mkdir /home/ubuntu/config-management/
+   66  puppet agent --test
+   67  cd /home/ubuntu/config-management/
+   68  ls
+   69  cat status.txt
+   70  systemctl status apache2
+   71  systemctl status nginx
+   72  cd ~
+   73  systemctl status nginx
+   74  systemctl status apache2
+   75  docker ps
+   76  systemctl restart nagios-nrpe
+   77  history
+   78  cat .ssh/authorized_keys
+   79  su - jenkins
+   80  ls
+   81  cd workspace/job1/
+   82  ls
+   83  vi Dockerfile
+   84  docker images
+   85  cd `
+   86  quit
+   87  cd ~
+   88  ls
+   89  find / -name "DockerFile"
+   90  find / -name "Dockerfile"
+   91  history
+
+
+
+root@ip-172-31-32-85:/home/ubuntu# su - jenkins
+jenkins@ip-172-31-32-85:~$ history
+    1  pwd
+    2  sudo su
+    3  sudo vi /etc/sudoers
+    4  su -ubuntu
+    5  su - ubuntu
+    6  sudo su -
+    7  passwd ubuntu
+    8  sudo passwd ubuntu
+    9  pwd
+   10  mkdir .ssh
+   11  cd .ssh/
+   12  vi authorized_keys
+   13  sudo su
+   14  cd ~
+   15  pwd
+   16  sudo su
+   17  cat .ssh/authorized_keys
+   18  su - jenkins
+   19  history
+   20  cat /etc/hosts
+   21  sudo vi /etc/hosts
+   22  sudo cat /etc/hosts
+   23  ping slave3
+   24  sudo vi /etc/hosts
+   25  sudo cat /etc/hosts
+   26  sudo su
+   27  ls
+   28  ls workspace/
+   29  cd workspace/job1/
+   30  pwd
+   31  cd ~
+   32  sudo apt-get update
+   33  apt install docker.io -y
+   34  sudo apt install docker.io -y
+   35  docker version
+   36  sudo docker iamges
+   37  sudo docker images
+   38  sudo docker ps -a
+   39  sudo docker ps
+   40  ls
+   41  ls workspace/job1/cd ..
+   42  cd workspace/Job2/
+   43  lsdc
+   44  sudo docker images
+   45  sudo docker ps
+   46  sudo docker ps -a
+   47  docker run -itd --name app1cont -p 82:80 app1
+   48  sudo docker run -itd --name app1cont -p 82:80 app1
+   49  sudo su
+   50  history
+
+
+Slave2
+
+Last login: Thu Nov 18 05:38:10 2021 from 37.34.240.210
+ubuntu@ip-172-31-43-205:~$ sudo su
+root@ip-172-31-43-205:/home/ubuntu# history
+    1  cd ~
+    2  apt-get udpate
+    3  apt-get update
+    4  apt-get install wget
+    5  wget https://apt.puppetlabs.com/puppet-release-bionic.deb
+    6  dpkg -i puppet-release-bionic.deb
+    7  apt-get update
+    8  apt-get install puppet-master
+    9  ufw allow 8140/tcp
+   10  systemctl status puppet-master.service
+   11  apt update
+   12  apt install -y autoconf bc gawk dc build-essential gcc libc6 make wget unzip apache2 php libapache2-mod-php libgd-dev libmcrypt-dev make libssl-dev snmp libnet-snmp-perl gettext
+   13  useradd nagios
+   14  groupadd nagios
+   15  usermod -a -G nagios nagios
+   16  usermod -a -G nagios www-data
+   17  cd /tmp/
+   18  wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.6.tar.gz
+   19  tar -zxvf /tmp/nagios-4.4.6.tar.gz
+   20  cd nagios-4.4.6
+   21  --with-command-group=nagcmd --with-httpd_conf=/etc/apache2/sites-enabled/
+   22  make all
+   23  make install
+   24  make all
+   25  make install
+   26  make install-init
+   27  make install-config
+   28  make install-commandmode
+   29  vi /usr/local/nagios/etc/objects/contacts.cfg
+   30  make install-webconf
+   31  htpasswd -c /usr/local/nagios/etc/htpasswd.users
+   32  htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+   33  systemctl restart apache2
+   34  cd ..
+   35  clear
+   36  a2enmod rewrite cgi
+   37  systemctl restart apache2
+   38  ufw apache
+   39  ufw allow apache
+   40  ufw allow 80
+   41  java -version
+   42  apt-get  install  openjdk-8-jdk
+   43  sudo add-apt-repository ppa:openjdk-r/ppa -y
+   44  sudo apt install openjdk-8-jdk -y
+   45  java -version
+   46  systemctl status jenkins
+   47  sudo apt-get install jenkins
+   48  wget -qO - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key add -
+   49  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+   50  apt-get update
+   51  sudo apt-get install jenkins
+   52  systemctl status jenkins
+   53  sudo ufw allow 8080
+   54  su -jenkins
+   55  su - jenkins
+   56  java -version
+   57  cd ~
+   58  sudo su
+   59  cd ~
+   60  ssh ubuntu@slave1
+   61  ssh ubuntu@slave2
+   62  cd .ssh/
+   63  vi id_rsa
+   64  cat id_rsa
+   65  su - jenkins
+   66  cat .ssh/id_rsa.pub
+   67  cd ~
+   68  cd .ssh/
+   69  ls
+   70  ssh ubuntu@slave
+   71  ssh ubuntu@slave1
+   72  ssh-keygen
+   73  cat id_rsa.pub
+   74  su - ubuntu
+   75  cat .ssh/authorized_keys
+   76  su - jenkins
+   77  useradd -m -s /bin/bash jenkins
+   78  passwd jenkins
+   79  cat /etc/sudoers
+   80  vi /etc/sudoers
+   81  su -jenkins
+   82  su - jenkins
+   83  history
+   84  cd ~
+   85  history
+   86  cd ~
+   87  cd .ssh/
+   88  vi authorized_keys
+   89  cd `
+   90  exit
+   91  quit
+   92  quit
+   93  cd ~
+   94  sudo apt install software-properties-common apt-transport-https -y
+   95  sudo add-apt-repository ppa:openjdk-r/ppa -y
+   96  sudo apt install openjdk-8-jdk -y
+   97  java -version
+   98  useradd -m -s /bin/bash jenkins
+   99  passed jenkins
+  100  passwd jenkins
+  101  vi /etc/sudoers
+  102  su - jenkins
+  103  sudo cat /Users/Shared/Jenkins/Home/secrets/initialAdminPassword
+  104  cat /var/lib/jenkins/secrets/initialAdminPassword
+  105  cd ~
+  106  cat .ssh/authorized_keys
+  107  vi .ssh/authorized_keys
+  108  su - ubuntu
+  109  vi .ssh/authorized_keys
+  110  sudo - ubuntu
+  111  su - ubuntu
+  112  vi /etc/hosts
+  113  vi .ssh/authorized_keys
+  114  sudo su
+  115  cd ~
+  116  apt update
+  117  apt install nagios-nrpe-server nagios-plugins
+  118  vi /etc/nagios/nrpe.cfg
+  119  systemctl restart nagios-nrpe-server
+  120  hosstname -I
+  121  hostname -I
+  122  su - jenkins
+  123  history
+  124  vi /etc/sudoers
+  125  vi /etc/hosts
+  126  sudo cat /etc/hosts
+  127  ping slave3
+  128  sudo vi /etc/hosts
+  129  sudo cat /etc/hosts
+  130  history
+  
+  
+root@ip-172-31-43-205:/home/ubuntu# su - jenkins
+jenkins@ip-172-31-43-205:~$ history
+    1  java -version
+    2  cd .ssh/
+    3  cat id_rsa
+    4  cat id_rsa.pub
+    5  sudo su
+    6  cd .ssh/
+    7  cat id_rsa
+    8  java -version
+    9  sudo su
+   10  cat .ssh/id_rsa.pub
+   11  sudo su
+   12  ssh-keygen
+   13  cat .ssh/id_rsa
+   14  cat .ssh/id_rsa.pub
+   15  sudo su
+   16  pwd
+   17  mkdir .ssh
+   18  ls
+   19  cd .ssh/
+   20  ls
+   21  rm -r id_rsa id_rsa.pub
+   22  vi authorized_keys
+   23  history
+   24  sudo su
+   25  pwd
+   26  sudo apt-get update | apt install docker.io -y
+   27  sudo apt-get update
+   28  sudo apt install docker.io -y
+   29  docker version
+   30  ls workspace/production/
+   31  sudo docker images
+   32  sudo docker ps
+   33  sudo docker rm -f $(docker ps -a -q)
+   34  sudo docker rm -f $(sudo docker ps -a -q)
+   35  sudo docker ps
+   36  sudo su
+   37  history
+
+  

@@ -1,0 +1,276 @@
+
+Last login: Thu Nov 18 13:33:12 2021 from 37.34.240.210
+ubuntu@ip-172-31-8-182:~$ sudo su
+root@ip-172-31-8-182:/home/ubuntu# history
+    1  cd ~
+    2  cd .ssh/
+    3  ls
+    4  cat id_rsa.pub
+    5  ssh ubuntu@slave1
+    6  scp /etc/hosts ubuntu@slave1:/etc/
+    7  sudo scp /etc/hosts ubuntu@slave1:/etc/
+    8  sudo scp /etc/hosts root@slave1:/etc/
+    9  sudo scp /etc/hosts root@slave2:/etc/
+   10  ssh ubuntu@slave2
+   11  cat /var/lib/jenkins/secrets/initialAdminPassword
+   12  sudo passwd jenkins
+   13  cat .ssh/id_rsa
+   14  sudo scp /etc/hosts ubuntu@slave1:/etc/
+   15  cat .ssh/id_rsa.pub
+   16  sudo scp /etc/hosts ubuntu@slave1:/etc/
+   17  sudo scp /etc/hosts jenkins@slave1:/etc/
+   18  sudo scp /etc/hosts root@slave1:/etc/
+   19  cd ~
+   20  sudo scp /etc/hosts ubuntu@slave1:/etc/
+   21  ping slave1
+   22  sudo scp /etc/hosts ubuntu@slave1:/etc/
+   23  ssh slave1
+   24  ssh ubuntu@slave1
+   25  ssh root@slave1
+   26  cd .ssh/
+   27  ls
+   28  ssh-keygen
+   29  su - jenkins
+   30  su - jenkins
+   31  cd ~
+   32  clear
+   33  apt install monitoring-plugins nagios-nrpe-plugin
+   34  cd /tmp/
+   35  ls
+   36  wget https://nagios-plugins.org/download/nagios-plugins-2.3.3.tar.gz
+   37  ls
+   38  cd nagios-plugins-2.3.3.tar.gz
+   39  ./configure --with-nagios-user=nagios --with-nagios-group=nagios
+   40  cd nagios-plugins-2.3.3.tar.gz
+   41  ./configure --with-nagios-user=nagios --with-nagios-group=nagios
+   42  cd nagios-plugins-2.3.3.tar.gz
+   43  ls
+   44  tar -zxvf /tmp/nagios-plugins-2.3.3.tar.gz
+   45  cd nagios-plugins-2.3.3
+   46  ./configure --with-nagios-user=nagios --with-nagios-group=nagios
+   47  ls
+   48  ./configure --with-nagios-user=nagios --with-nagios-group=nagios
+   49  sudo systemctl start nagios.service
+   50  systemctl restart apache2.service
+   51  cd ~
+   52  systemctl restart apache2.service
+   53  systemctl status apache2
+   54  cd ~
+   55  systemctl status apache2
+   56  systemctl status apache2.service
+   57  systemctl restart apache2.service
+   58  sudo dpkg -l selinux*
+   59  apt-get update
+   60  apt-get install -y autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php8.0 libgd-dev
+   61  apt list --installed
+   62  apt-get install -y autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php libgd-dev
+   63  cd /tmp/
+   64  ls
+   65  wget -O nagioscore.tar.gz https://github.com/NagiosEnterprises/nagioscore/archive/nagios-4.4.6.tar.gz
+   66  tar xzf nagioscore.tar.gz
+   67  sudo ./configure --with-httpd-conf=/etc/apache2/sites-enabled
+   68  make all
+   69  make install-groups-users
+   70  usermod -a -G nagios www-data
+   71  make install
+   72  apt list --installed
+   73  make install-daemoninit
+   74  make install-commandmode
+   75  make install-config
+   76  make install-webconf
+   77  a2enmod rewrite
+   78  a2enmod cgi
+   79  systemctl restart apache2.service
+   80  systemctl start nagios.service
+   81  cd ..
+   82  apt-get install -y autoconf gcc libc6 libmcrypt-dev make libssl-dev wget bc gawk dc build-essential snmp libnet-snmp-perl gettext
+   83  wget --no-check-certificate -O nagios-plugins.tar.gz https://github.com/nagios-plugins/nagios-plugins/archive/release-2.3.3.tar.gz
+   84  ls
+   85  tar zxf nagios-plugins.tar.gz
+   86  cd nagios-plugins-release-2.3.3/
+   87  ./tools/setup
+   88  ./configure
+   89  make
+   90  make install
+   91  systemctl restart nagios
+   92  hostname -I
+   93  check_nrpe -H slave1
+   94  cd ~
+   95  check_nrpe -H slave1
+   96  find / -name "check_nrpe"
+   97  /usr/lib/nagios/plugins/check_nrpe -H slave1
+   98  /usr/lib/nagios/plugins/check_nrpe -H slave2
+   99  /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+  100  vi /usr/local/nagios/etc/nagios.cfg
+  101  /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+  102  vi /usr/local/nagios/etc/nagios.cfg
+  103  vi /usr/local/nagios/etc/servers/hosts.cfg
+  104  /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+  105  vi /usr/local/nagios/etc/nagios.cfg
+  106  vi /usr/local/nagios/etc/servers/host1.cfg
+  107  /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+  108  vi /usr/local/nagios/etc/servers/host1.cfg
+  109  vi /usr/local/nagios/etc/nagios.cfg
+  110  vi /usr/local/nagios/etc/objects/contacts.cfg
+  111  cat /usr/local/nagios/etc/objects/contacts.cfg
+  112  vi /usr/local/nagios/etc/nagios.cfg
+  113  vi /usr/local/nagios/etc/servers/host1.cfg
+  114  cat /usr/local/nagios/etc/servers/host1.cfg
+  115  /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+  116  cat /usr/local/nagios/etc/servers/host1.cfg
+  117  vi /usr/local/nagios/etc/servers/host1.cfg
+  118  cat /usr/local/nagios/etc/servers/host1.cfg
+  119  /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+  120  cp /usr/local/nagios/etc/servers/host1.cfg /usr/local/nagios/etc/servers/host2.cfg
+  121  vi /usr/local/nagios/etc/servers/host2.cfg
+  122  /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+  123  apt-get install git
+  124  git --version
+  125  apt install docker.io -y
+  126  docker version
+  127  docker images
+  128  git --version
+  129  mkdir project1
+  130  cd project1/
+  131  git clone https://github.com/itsvlganesh/website.git
+  132  ls
+  133  cd website/
+  134  ls
+  135  cat index.html
+  136  vi Dockerfile
+  137  git add .
+  138  git commit -m "commiting docker file with apache"
+  139  git branch develop
+  140  git checkout develop
+  141  ls
+  142  vi Dockerfile
+  143  git checkout master
+  144  git checkout develop
+  145  cat index.html
+  146  vi Dockerfile
+  147  git add .
+  148  git commit "nginx from develop branch"
+  149  git commit -m "nginx from develop branch"
+  150  git push origin develop
+  151  git checkout master
+  152  git push origin master
+  153  git checkout develop
+  154  git push origin develop
+  155  git pull
+  156  git pull origin develop
+  157  git mergetool
+  158  git difftool --tool=vimdiff --no-prompt
+  159  git config --global diff.tool vimdiff
+  160  git config --global merge.tool vimdiff
+  161  git config --global difftool.prompt false
+  162  git mergetool
+  163  git commit -m "After merger:
+  164  quit
+  165  git commit -m "After merge"
+  166  git push origin develop
+  167  clear
+  168  git checkout develop
+  169  vi index.html
+  170  git add .
+  171  git commit -m "index.html change for webhook test"
+  172  ls
+  173  git push origin develop
+  174  cat index.html
+  175  vi index.html
+  176  git add .
+  177  git commit -m "index.html change for webhook test."
+  178  git push origin develop
+  179  vi index.html
+  180  git add .
+  181  git commit -m "index.html change for webhook test2"
+  182  git push origin develop
+  183  docker ps
+  184  vi index.html
+  185  git add .
+  186  git commit -m "index.html change for webhook test "
+  187  git push origin develop
+  188  sudo systemctl enable puppet
+  189  cd ~
+  190  sudo systemctl enable puppet
+  191  sudo apt-get update
+  192  sudo apt-get install wget
+  193  wget https://apt.puppetlabs.com/puppet-release-bionic.deb
+  194  sudo dpkg -i puppet-release-bionic.deb
+  195  sudo apt-get install puppet
+  196  sudo systemctl start puppet
+  197  sudo systemctl enable puppet
+  198  mkdir -p /etc/puppet/code/environments/production/manifests
+  199  sudo systemctl status puppet-master
+  200  sudo systemctl status puppet
+  201  apt remove puppet
+  202  apt purge puppet
+  203  sudo systemctl status puppet
+  204  ls
+  205  rm -f puppet-release-bionic.deb
+  206  wget https://apt.puppetlabs.com/puppet-release-bionic.deb
+  207  dpkg -i puppet-release-bionic.deb
+  208  apt-get update
+  209  apt-get install puppet-master
+  210  systemctl status puppet-master.service
+  211  ufw allow 8140/tcp
+  212  puppet cert list
+  213  vi /etc/hosts
+  214  puppet cert list
+  215  systemctl restart puppet-master
+  216  puppet cert list
+  217  puppet cert sign --all
+  218  cat /etc/hosts
+  219  vi /etc/puppet/code/environments/production/manifests/site.pp
+  220  cat /etc/puppet/code/environments/production/manifests/site.pp
+  221  vi /usr/local/nagios/etc/nagios.cfg
+  222  /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+  223  check_nrpe slave1
+  224  find / -name "check_nrpe"
+  225  /usr/lib/nagios/plugins/check_nrpe -H slave1
+  226  cd /usr/local/nagios/etc/servers/
+  227  ls
+  228  vi host1.cfg
+  229  systemctl restart nagios
+  230  vi /etc/hosts
+  231  sudo cat /etc/hosts
+  232  ping slave3
+  233  sudo vi /etc/hosts
+  234  sudo cat /etc/hosts
+  235  git branch
+  236  cd ~
+  237  git branches
+  238  ls
+  239  find / -name "DockerFile"
+  240  find / -name "Dockerfile"
+  241  cd project1/website/
+  242  git branch
+  243  git checkout -b hotfix
+  244  git branch master
+  245  vi index.html
+  246  cat index.html
+  247  git add .
+  248  git commit -m "test"
+  249  git push origin master
+  250  git branch
+  251  git push origin hotfix
+  252  vi index.html
+  253  cat index.html
+  254  git checkout master
+  255  vi index.html
+  256  git add .
+  257  git commit -m "docuerhub"
+  258  git push origin master
+
+root@ip-172-31-8-182:/home/ubuntu# su - jenkins
+jenkins@ip-172-31-8-182:~$ history
+    1  sudo ssh ubuntu@slave1
+    2  sudo ssh root@slave1
+    3  sudo su
+    4  hostname -I
+    5  vi /etc/hosts
+    6  sudo vi /etc/hosts
+    7  sudo scp /etc/hosts ubuntu@slave1:/etc/
+    8  ssh-keygen
+    9  cat .ssh/id_rsa.pub
+   10  sudo su
+   11  history
